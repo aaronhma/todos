@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:prod": "ng build --prod --base-href todos",
+    "build:prod": "ng build –aot --prod -bh https://aaronhma.github.io/todos/",
     "deploy:github": "git subtree push --prefix dist origin gh-pages",
     "publish": "npm run build:prod && npm run deploy:github"
   },
