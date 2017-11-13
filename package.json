@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href todos"
+    "build:prod": "ng build --prod --base-href todos",
+    "deploy:github": "git subtree push -f --prefix dist origin gh-pages",
+    "publish": "npm run build:prod && npm run deploy:github"
   },
   "private": true,
   "dependencies": {
