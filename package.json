@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:prod": "ng build --prod --base-href todos",
-    "deploy:github": "git subtree push -f --prefix dist origin gh-pages",
+    "deploy:github": "git subtree push --prefix dist origin gh-pages",
     "publish": "npm run build:prod && npm run deploy:github"
   },
   "private": true,
