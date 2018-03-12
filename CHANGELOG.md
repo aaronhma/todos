@@ -9,6 +9,15 @@
   * Added support for iPhones, Ipads and Android Tablets.
   * Added secure https:// when clicking and entering data
 
+ # My To Do list Version 1.0.1(January 2018)
+ ### New Features:
+  * Color Changing(Released)
+  * Faster Loading
+  * Fixed Browser Cache
+  * Added support for Windows and Linux
+  * Fixed when My To Do List randomly searches for project files and download them
+
+
 # My To Do List Version 1.0.0(September 2017)
 ### Default Features:
   * Animations
@@ -17,10 +26,3 @@
   * Router
   * Color Changing(Beta)
  
- # My To Do list Version 1.0.1(January 2018)
- ### New Features:
-  * Color Changing(Released)
-  * Faster Loading
-  * Fixed Browser Cache
-  * Added support for Windows and Linux
-  * Fixed when My To Do List randomly searches for project files and download them
