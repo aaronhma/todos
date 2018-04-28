@@ -22,7 +22,7 @@
 # My To Do List Version 1.0.0(September 2017)
 ### Default Features:
   * Animations
-  * Angular Material REactiveness
+  * Angular Material Reactiveness
   * Todos List
   * Router
   * Color Changing(Beta)
