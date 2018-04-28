@@ -1,3 +1,8 @@
+# MY TO DO LIST CHANGELOG
+# My To Do List 2.0.0 Important Notes:
+ * Officially added to Firebolt Search page + engine
+ * Officially added site to Firebolt Homepage(https://www.firebolt.life)
+
 # My To Do List 2.0.0 Released(May 2018)
 ### New Features
   * ## MY TODO LIST STARTS TO SAVE DATA!
