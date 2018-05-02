@@ -1,21 +1,21 @@
 # MY TO DO LIST CHANGELOG
-# My To Do List 2.0.0 Important Notes:
+## My To Do List 2.0.0 Important Notes:
  * Officially added to Firebolt Search page + engine
  * Officially added site to Firebolt Homepage(https://www.firebolt.life)
 
-# My To Do List 2.0.0 Released(May 2018)
+## My To Do List 2.0.0 Officially Released(May 2018)
 ### New Features
   * ## MY TODO LIST STARTS TO SAVE DATA!
   * WE OFFICUALLY PRESENT MY TO DO LIST VERSION 2.0.0!
   * Added support for iPhones, Ipads and Android Tablets.
 
-# My To Do List 2.0.0 Beta(April 2017)
+## My To Do List 2.0.0 Beta(April 2017)
 ### Firebolt, Inc. no longer supports 0.0.1 Beta Version and 1.0.0 and 1.0.1.
 ### New Features
   * Added support for iPhones, Ipads and Android Tablets.
   * Added secure https:// when clicking and entering data
 
- # My To Do list Version 1.0.1(January 2018)
+ ## My To Do list Version 1.0.1(January 2018)
  ### New Features:
   * Color Changing(Released)
   * Faster Loading
@@ -24,7 +24,7 @@
   * Fixed when My To Do List randomly searches for project files and download them
 
 
-# My To Do List Version 1.0.0(September 2017)
+## My To Do List Version 1.0.0(September 2017)
 ### Default Features:
   * Animations
   * Angular Material Reactiveness
