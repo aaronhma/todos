@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule, MatIconModule } from '@angular/material';
+import { MatInputModule, MatIconModule, MatButtonModule, MatCardModule, MatDialogModule } from '@angular/material';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { HowtoComponent } from './howto/howto.component';
 import { UpdateComponent } from './update/update.component';
+import { ColorThemeComponent } from './color-theme/color-theme.component';
+import { ColorThemeOpenComponent } from './color-theme-open/color-theme-open.component';
 
 export const router: Routes = [
   { path: '', redirectTo: 'howto', pathMatch: 'full' },
@@ -24,7 +26,12 @@ export const router: Routes = [
     AppComponent,
     ExamplesComponent,
     HowtoComponent,
-    UpdateComponent
+    UpdateComponent,
+    ColorThemeComponent,
+    ColorThemeOpenComponent
+  ],
+  entryComponents: [
+    ColorThemeOpenComponent
   ],
   imports: [
     BrowserModule,
@@ -33,12 +40,19 @@ export const router: Routes = [
     BrowserAnimationsModule,
     MatInputModule,
     MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDialogModule,
     RouterModule.forRoot(router, { preloadingStrategy: PreloadAllModules })
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [ AppComponent ],
+  providers: [],
   exports: [
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDialogModule
   ]
 })
 export class AppModule { }

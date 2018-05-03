@@ -84,13 +84,17 @@ import { Component, trigger, state, style, transition, animate, keyframes, Input
 })
 export class AppComponent {
   state: string = 'inactive';
+  public themeColor = '#272b2d';
 
   ourItems = [
-    'Welcome to My To Do List Version 1.0.0!',
+    'Welcome to  My To Do List Version 2.0.0 Beta!',
     'First, click the box on the line.',
     'Then, type in what you need to get done and hit the Return(Enter) key.',
     'Once you are done with your todo-list item, you can delete them by pressing the Delete button.'
   ];
+
+  constructor() {}
+
 
   toggleFocus() {
     this.state = (this.state === 'inactive' ? 'active' : 'inactive');
@@ -103,5 +107,9 @@ export class AppComponent {
 
   removeItem(event, i) {
     this.ourItems.splice(i, 1);
+  }
+
+  public changeThemeColor (color: string) {
+    this.themeColor = color;
   }
 }

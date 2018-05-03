@@ -1,39 +1,48 @@
-<header>
-  <div class="row">
-    <h2>My Todo List</h2>
-    <ul>
-      <li>
-        <a [routerLink]="['howto']">How-To</a>
-      </li>
-      <li>
-        <a [routerLink]="['examples']">Examples</a>
-      </li>
-    </ul>
-  </div>
-</header>
-<br>
-<div class="row">
-  <div class="panel" [@focusPanel]='state'>
-    <mat-input-container>
-      <input type="text" on-focus='toggleFocus()' on-focusout='toggleFocus()' (keyup.enter)='submitItem($event)' matInput required
-        ngModel #todo="ngModel">
-      <mat-hint style="font-size: 19px;">Enter what you need to get done quickly&nbsp;&#8593;.</mat-hint>
-      <p id="subtxt" [@note]='state'>HIT&nbsp;ENTER&nbsp;TO&nbsp;ADD</p>
-    </mat-input-container>
-  </div>
-</div>
-
-<div class="row">
-  <div class="small-12 medium-6">
-    <div class="panel nplr">
-      <div class="item-container" *ngFor="let item of ourItems; let i = index" [attr.data-index]="i" [@itemEnter]="state">
-        <div class="identifier"></div>
-        <p>{{ item }}</p>
-        <a (click)="removeItem($event, i)" style="color: #ff0000;">Delete</a>
-      </div>
+<div>
+    <header [ngStyle]="{
+      backgroundColor: themeColor
+    }">
+        <div class="row">
+            <h2>My Todo List</h2>
+            <ul class="navbar">
+                <li>
+                    <a [routerLink]="['howto']">How-To</a>
+                </li>
+                <li>
+                    <a [routerLink]="['examples']">Examples</a>
+                </li>
+                <li>
+                    <section class="example-section">
+                        <app-color-theme (themeColorChange)="changeThemeColor($event)"></app-color-theme>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <div class="row">
+        <div class="panel" [@focusPanel]='state'>
+            <mat-input-container>
+                <input type="text" on-focus='toggleFocus()' on-focusout='toggleFocus()' (keyup.enter)='submitItem($event)' matInput required
+                    ngModel #todo="ngModel" placeholder="To Do Item">
+                <mat-hint style="font-size: 19px;">Enter What You Need To Get Done Quickly&nbsp;&#8593;.</mat-hint>
+                <p id="subtxt" [@note]='state'>HIT&nbsp;ENTER&nbsp;TO&nbsp;ADD</p>
+            </mat-input-container>
+        </div>
     </div>
-  </div>
-  <div class="small-12 medium-6 pages">
-    <router-outlet></router-outlet>
-  </div>
+
+    <div class="row">
+        <div class="small-12 medium-6">
+            <div class="panel nplr">
+                <div class="item-container" *ngFor="let item of ourItems; let i = index" [attr.data-index]="i" [@itemEnter]="state">
+                    <div class="identifier"></div>
+                    <p>{{ item }}</p>
+                    <a (click)="removeItem($event, i)" style="color: #ff0000;">Delete</a>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-6 pages">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

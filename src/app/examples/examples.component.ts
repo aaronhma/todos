@@ -15,5 +15,4 @@ export class ExamplesComponent implements OnInit {
   ngOnInit() {
     this.state = (this.state === 'in' ? 'out' : 'in');
   }
-
 }

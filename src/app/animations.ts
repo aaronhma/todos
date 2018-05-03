@@ -1,9 +1,9 @@
 import { trigger, state, style, transition, animate } from '@angular/core';
 
-export const pageTransition = 
+export const pageTransition =
     trigger('transition', [
         state('in', style({
-            transform: 'translateY(0)', 
+            transform: 'translateY(0)',
             opacity: '0'
         })),
         transition('void => *', [

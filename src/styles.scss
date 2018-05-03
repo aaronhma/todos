@@ -1,128 +1,223 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400'); 
+/* ⓒⓞⓟⓨⓡⓘⓖⓗⓣ ②0①⑦-②0①⑧ ⓕⓘⓡⓔⓑⓞⓛⓣ, ⓘⓝⓒ. */
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
 $primary-color: #272b2d;
 $secondary-color: #2e3437;
 $sub-txt: #6a6c6e;
 $dark-color: #232628;
 $highlight-color: #ff3a89;
-
 * {
-    font-family: 'Raleway';
-    font-size:20px;
-    color:#fff;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #fff;
 }
+
 body {
-    background-color:$primary-color;
-    padding: 7rem 0;
+  background-color: $primary-color;
+  padding: 7rem 0;
 }
 
 ul {
-    list-style-type:none;
-    margin:0 0 4rem 0;
+  list-style-type: none;
+  margin: 0 0 4rem;
 }
+
 ul li {
-    display:inline;
-    float:left;
-    margin-right:5rem;
+  display: inline;
+  float: left;
+  margin-right: 5rem;
 }
+
 ul li a {
-    color:#fff;
-    text-transform:uppercase;
-    font-size:1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
+
 .panel {
-    background: $secondary-color;
-    padding:3rem;
-    width:100%;
-    margin-bottom:3rem;
+  background: $secondary-color;
+  padding: 3rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 input {
-    background:none !important;
-    border:none !important;
-    box-shadow:none !important;
-    border-bottom: 1px solid #4d575d !important;
-    font-size:1.9rem !important;
-    color:#fff !important;
-    font-weight:200;
-    padding: 0 0 15px 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #4d575d !important;
+  font-size: 1.9rem !important;
+  color: #fff !important;
+  font-weight: 200;
+  padding: 0 0 15px !important;
 }
 
 ::-webkit-input-placeholder {
-   color: #707374 !important;
+  color: #707374 !important;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #707374 !important;  
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #707374 !important;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #707374 !important;  
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #707374 !important;
 }
 
-:-ms-input-placeholder {  
-   color: #707374 !important;  
+:-ms-input-placeholder {
+  color: #707374 !important;
 }
+
 p#subtxt {
-    color:$sub-txt;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:.7em;
-    margin-bottom:0;
+  color: $sub-txt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .7em;
+  margin-bottom: 0;
 }
 
 .nplr {
-    padding-left:0;
-    padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .item-container {
-    background:$dark-color;
-    height:65px;
-    margin-bottom:2px;
+  background: $dark-color;
+  height: 65px;
+  margin-bottom: 2px;
 }
 
 .identifier {
-    background-color:$highlight-color;
-    width:1%;
-    display:inline;
-    float:left;
-    height:65px;
+  background-color: $highlight-color;
+  width: 1%;
+  display: inline;
+  float: left;
+  height: 65px;
 }
 
-.item-container p, .item-container a {
-    display:inline;
-    float:left;
+.item-container a,
+.item-container p {
+  display: inline;
+  float: left;
 }
 
 .item-container p {
-    width:85%;
-    margin:17px 0 0 0;padding:0;
-    text-indent:30px;
+  width: 85%;
+  margin: 17px 0 0;
+  padding: 0;
+  text-indent: 30px;
 }
 
 .item-container a {
-    width:11%;
-    margin-top:17px;
-    text-align:center;
+  width: 11%;
+  margin-top: 17px;
+  text-align: center;
 }
 
 .clear {
-    clear:both;
+  clear: both;
 }
 
 .pages {
-    padding: 3rem;
+  padding: 3rem;
 }
 
-.pages p, .pages ul li {
-    color:#7b878e;
-    clear:both;
+.pages p,
+.pages ul li {
+  color: #7b878e;
+  clear: both;
 }
 
 h2 {
-    font-size:1.3rem;
-    margin-bottom: 20px;
-    text-transform:uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.red {
+  background-color: #ff0000 !important;
+}
+
+/**
+  * ⓐⓝⓖⓤⓛⓐⓡ ⓜⓐⓣⓔⓡⓘⓐⓛ ⓥ④.0.0 ⓘⓒⓞⓝⓢ
+*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/materialicons/v31/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2") format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+// ----ⓢⓟⓘⓝⓝⓔⓡ---- //
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.nonav {
+  margin: 0;
 }

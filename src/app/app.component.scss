@@ -1,5 +1,18 @@
 ::ng-deep {
     .mat-form-field-infix {
         width: 640px !important;
-    }    
+    }
+}
+
+header {
+    display: block;
+    overflow: hidden;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #272b2d;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
